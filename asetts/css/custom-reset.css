@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* html {
+  フォントサイズの計算に1rem=10pxを使いたいのでhtmlに62.5%を指定
+  font-size: 62.5%;
+} */
+
+body {
+  /* どんなにブラウザ幅が狭くなっても最低このコンテンツ幅を確保する */
+  min-width: 320px;
+  font-family: "Noto Serif", "Noto Serif JP", "Noto Sans JP",
+    /* YuGothic,
+    "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", */
+      sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  /* 画像の下の微妙な隙間をなくす */
+  vertical-align: bottom;
+}
+
+ol,
+ul {
+  list-style: none;
+}

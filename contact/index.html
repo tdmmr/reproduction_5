@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Cresta Designコンタクトページ" />
+    <title>Cresta Design</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../asetts/css/html5reset-1.6.1.css" />
+    <link rel="stylesheet" href="../asetts/css/custom-reset.css" />
+    <link rel="stylesheet" href="../asetts/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header-inner">
+        <a class="header-logo fontsize-LL" href="../index.html"
+          >Cresta Design</a
+        >
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item">
+              <a href="../index.html#concept">Concept</a>
+            </li>
+            <li class="gnav-item"><a href="../index.html#works">Works</a></li>
+            <li class="gnav-item">
+              <a href="../index.html#service">Service</a>
+            </li>
+            <li class="gnav-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bars">
+        <span class="bar bar-top"></span>
+        <span class="bar bar-center"></span>
+        <span class="bar bar-bottom"></span>
+      </div>
+    </header>
+
+    <div class="contact-fv">
+      <div class="common-inner">
+        <h2 class="contact-title fontsize-XL-2">Contact</h2>
+        <div class="section-bottom contact-bottom">Contact us</div>
+      </div>
+    </div>
+    <!-- //ヘッダー -->
+
+    <!-- contact -->
+    <section class="section">
+      <div class="common-inner">
+        <form action="" method="POST" class="contact-form">
+          <div class="form-parts">
+            <span class="parts-label fontsize-M">お問い合わせ内容</span>
+            <div class="checkbox-box">
+              <label>
+                <input
+                  type="checkbox"
+                  name="content"
+                  value="資料請求"
+                />資料請求 </label
+              ><br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="content"
+                  value="お電話でのご相談を希望"
+                />お電話でのご相談を希望</label
+              ><br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="content"
+                  value="申し込み"
+                />申し込み</label
+              >
+            </div>
+          </div>
+          <label class="form-parts">
+            <span class="parts-label fontsize-M">担当者名</span>
+            <input type="text" name="staff-name" />
+          </label>
+          <label class="form-parts">
+            <span class="parts-label fontsize-M">電話番号</span>
+            <input type="tel" name="your-phone" />
+          </label>
+          <label class="form-parts">
+            <span class="parts-label fontsize-M">メールアドレス</span>
+            <input type="email" name="your-email" />
+          </label>
+          <label class="form-parts">
+            <span class="parts-label fontsize-M">その他</span>
+            <textarea name="message"></textarea>
+          </label>
+          <input type="submit" class="send-btn fontsize-M" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <!-- //contact -->
+
+    <!-- フッター -->
+    <footer class="footer">
+      <p class="copy-right fontsize-S">
+        <small>&copy;crest.design all rights reserved</small>
+      </p>
+    </footer>
+    <!-- //フッター -->
+  </body>
+</html>
