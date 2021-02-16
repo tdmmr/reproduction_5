@@ -4,372 +4,176 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="DataManiaのホーム" />
-    <title>DataMania - 特化型データマーケティング支援サービス</title>
+    <meta name="description" content="Cresta Designトップページ" />
+    <title>Cresta Design</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="asetts/css/html5reset-1.6.1.css" />
     <link rel="stylesheet" href="asetts/css/custom-reset.css" />
     <link rel="stylesheet" href="asetts/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
     <!-- //CSS -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="asetts/js/common.js"></script>
+    <!-- //jQuery -->
   </head>
+
   <body>
-    <!-- header -->
+    <!-- ヘッダー -->
     <header class="header">
-      <div class="top-fv">
-        <div class="header-logo">
-          <img src="asetts/images/logo-datamania@2x.png" alt="" />
+      <div class="header-inner">
+        <a class="header-logo fontsize-LL" href="#">Cresta Design</a>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#concept">Concept</a></li>
+            <li class="gnav-item"><a href="#works">Works</a></li>
+            <li class="gnav-item"><a href="#service">Service</a></li>
+            <li class="gnav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="bars">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-center"></span>
+          <span class="bar bar-bottom"></span>
         </div>
-        <h1 class="header-copy">
-          <span class="black-belt">データマーケティングの</span><br />
-          <span class="black-belt">未来をつくる</span>
-        </h1>
-        <p class="campaign-btn">
-          <a href="#" class="campaign-text">
-            今なら<br />
-            初月無料
-          </a>
+      </div>
+    </header>
+    <!-- //ヘッダー -->
+
+    <!-- fv -->
+    <div class="top-fv">
+      <ul class="slider">
+        <li class="slide-item slide01"></li>
+        <li class="slide-item slide02"></li>
+        <li class="slide-item slide03"></li>
+      </ul>
+      <div class="header-box">
+        <h1 class="header-title">Design for Smile.</h1>
+        <p class="header-text fontsize-XL">
+          快適なオフィスを<br class="sp-br" />デザインする
         </p>
       </div>
-      <nav class="header-gnav">
-        <div class="gnav-inner">
-          <ul class="gnav-list">
-            <li class="gnav-item">
-              <a href="#" class="gnav-btn">最新情報</a>
-            </li>
-            <li class="gnav-item">
-              <a href="#" class="gnav-btn">サービスの特長</a>
-            </li>
-            <li class="gnav-item">
-              <a href="#" class="gnav-btn">3つの強み</a>
-            </li>
-            <li class="gnav-item">
-              <a href="#" class="gnav-btn">お客様の声</a>
-            </li>
-          </ul>
-          <a href="#" class="contact-btn">お問い合わせ</a>
-        </div>
-      </nav>
-    </header>
-    <!-- /header -->
+    </div>
+    <!-- //fv -->
     <!-- main -->
-    <main>
-      <!-- 最新情報 -->
-      <section class="section">
+    <main class="main">
+      <!-- concept -->
+      <section class="section" id="concept">
         <div class="common-inner">
-          <h2 class="section-title">
-            <span>最新情報</span>
-          </h2>
-          <p class="news-list">
-            <a href="#" class="news-item">
-              <time class="news-day" datetime="2019-08-23">2019.08.23</time
-              ><span class="news-text"
-                >新料金プラン「Mania 5」をリリースしました。</span
-              >
-            </a>
-            <a href="#" class="news-item">
-              <time class="news-day" datetime="2019-08-08">2019.08.08</time
-              ><span class="news-text"
-                >Android
-                OS版のアプリケーションにおける決済機能の不具合について</span
-              >
-            </a>
-            <a href="#" class="news-item">
-              <time class="news-day" datetime="2019-07-14">2019.07.14</time
-              ><span class="news-text"
-                >関東テレビの情報番組「サックリ！」にData
-                Mania代表の石渡が出演します</span
-              >
-            </a>
-          </p>
-          <p class="past-news">
-            <a href="#">過去の情報を見る</a>
-          </p>
-        </div>
-      </section>
-      <!-- /最新情報 -->
-
-      <!-- サービスの特長 -->
-      <section class="section section-blue">
-        <div class="common-inner">
-          <h2 class="section-title">
-            <span>サービスの特長</span>
-          </h2>
-          <div class="service-wrap common-wrap-white">
-            <div class="service-box">
-              <p class="service-text">
-                DataManiaはデータマーケティングの効率を最大化するために設計されています。<br />
-                自動分析・レポート機能、ユーザー管理機能、通知機能、その他データマーケティングに必要不可欠な40の機能を、先進的で洗練されたインターフェースで利用することができます。<br />
-                満を持してリリースされたバージョン2からは、忙しいマーケターのためにスマートフォンアプリ版もリリースされました。
-              </p>
-              <ul class="service-images">
-                <li class="service-icon">
-                  <img src="asetts/images/icon-auto_analytics@2x.png" alt="" />
-                </li>
-                <li class="service-icon">
-                  <img src="asetts/images/icon-time_management@2x.png" alt="" />
-                </li>
-                <li class="service-icon">
-                  <img src="asetts/images/icon-alert@2x.png" alt="" />
-                </li>
-                <li class="service-icon">
-                  <img src="asetts/images/icon-user_management@2x.png" alt="" />
-                </li>
-                <li class="service-icon">
-                  <img src="asetts/images/icon-auto_reporting@2x.png" alt="" />
-                </li>
-                <li class="service-icon">
-                  <img src="asetts/images/icon-smartphone@2x.png" alt="" />
-                </li>
-              </ul>
-            </div>
-            <p class="main-btn">
-              <a href="#" class="common-btn">機能について詳しく知る</a>
+          <h2 class="section-title section-title-black fontsize-XL">Concept</h2>
+          <h3 class="concept-summary fontsize-L">
+            “働きたくなる空間”をデザインする<br />
+            ことで人々を幸せにする。
+          </h3>
+          <div class="concept-box">
+            <p class="concept-text fontsize-M">
+              私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta
+              Designだからこそできる空間デザインを提供させていただきます。
             </p>
+            <div class="concept-image">
+              <img src="asetts/img/concept-image@2x.jpg" alt="オフィスの様子" />
+            </div>
           </div>
+          <div class="section-bottom bottom-black">Our Concept</div>
         </div>
       </section>
-      <!-- /サービスの特長 -->
+      <!-- //concept -->
 
-      <!-- Data Maniaの強み -->
-      <section class="section">
-        <div class="common-inner">
-          <h2 class="section-title">
-            <span>Data Maniaの3つの強み</span>
-          </h2>
-          <ul class="advantage-list">
-            <li class="advantage-item">
-              <p class="advantage-image">
-                <img src="asetts/images/img-usp-01@2x.png" alt="" />
-              </p>
-              <div class="advantage-box">
-                <h3 class="advantage-point">
-                  データマーケティングの支援に特化
-                </h3>
-                <p class="advantage-text">
-                  データ分析アプリケーションは多数ありますが、データマーケティングに特化したものはData
-                  Maniaを置いて他にありません。単なる分析機能・レポーティング機能だけでなく、当社独自調査による過去のマーケティング事例を元に、最適な施策を提案します。
-                </p>
-              </div>
-            </li>
-            <li class="advantage-item">
-              <p class="advantage-image">
-                <img src="asetts/images/img-usp-02@2x.png" alt="" />
-              </p>
-              <div class="advantage-box">
-                <h3 class="advantage-point">稼働率99.9%の自社製サーバー</h3>
-                <p class="advantage-text">
-                  八王子と松代にそれぞれ設置された自社製のサーバーは99.9%の高稼働率を保証します。それぞれのサーバーは、相互に最適化されたアルゴリズムでデータを同期しており、万が一片方が自然災害やその他の事故で稼働できない状況になっても、サービス自体への影響は全くありません。
-                </p>
-              </div>
-            </li>
-            <li class="advantage-item">
-              <p class="advantage-image">
-                <img src="asetts/images/img-usp-03@2x.png" alt="" />
-              </p>
-              <div class="advantage-box">
-                <h3 class="advantage-point">24時間365日対応のサポート体制</h3>
-                <p class="advantage-text">
-                  Data
-                  Maniaは先進的な機能と洗練されたインターフェースで、マーケターの企画・立案を支援します。一方、こういったツールに不慣れなお客様にも安心してお使いいただけるよう、オペレーターが24時間365日対応可能なサポート体制を構築しています。<br />
-                  もしアプリケーションの操作でわからないシーンに遭遇しても安心です。
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- /Data Maniaの強み -->
-
-      <!-- お客様の声 -->
-      <section class="section section-blue">
-        <div class="common-inner">
-          <h2 class="section-title">
-            <span>お客様の声</span>
-          </h2>
-          <div class="client-voice-wrap common-wrap-white">
-            <ul class="client-list">
-              <li class="client-item">
-                <figure class="client-image">
-                  <img src="asetts/images/photo-mr_okochi@2x.jpg" alt="" />
-                  <figcaption>
-                    株式会社グローバルマーケティングジャパン<br />
-                    ダイレクトソリューション2部　大河内様
-                  </figcaption>
-                </figure>
-                <p class="client-text">
-                  Data
-                  Maniaを導入する前は、全てのデータひとつひとつ集め、それを分析し、レポートするまでを全て手作業で行っていました。<br />
-                  この工程で膨大な時間を使ってしまい、肝心のマーケティング施策を考える時間がどんどん削られていましたが、Data
-                  Mania導入後はそういった作業を一切しなくて済むようになりました。<br />
-                  これからもきっと我が社には欠かせないツールであり続けると確信しています。
+      <!-- works -->
+      <div class="works-bg">
+        <section class="section" id="works">
+          <div class="common-inner">
+            <h2 class="section-title section-title-R fontsize-XL">Works</h2>
+            <ul class="works-list fontsize-M">
+              <li class="works-item">
+                <div class="works-image">
+                  <img src="asetts/img/card-img01@2x.jpg" alt="" />
+                </div>
+                <p class="works-text">
+                  新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
                 </p>
               </li>
-              <li class="client-item">
-                <figure class="client-image">
-                  <img src="asetts/images/photo-ms_kagari@2x.jpg" alt="" />
-                  <figcaption>
-                    株式会社キャトルミューティレーション<br />
-                    アカウントセールス事業部　篝様
-                  </figcaption>
-                </figure>
-                <p class="client-text">
-                  全てのデータがひとつに集約されるので、煩わしいデータの整理をする必要が一切ありません。トライアル期間に申し込んだのですが、使い始めて30分でまさに当社が求めていたツールだと確信しました。
+              <li class="works-item">
+                <div class="works-image">
+                  <img src="asetts/img/card-img02@2x.jpg" alt="" />
+                </div>
+                <p class="works-text">
+                  新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
                 </p>
               </li>
-              <li class="client-item">
-                <figure class="client-image">
-                  <img src="asetts/images/photo-mr_davis@2x.jpg" alt="" />
-                  <figcaption>
-                    株式会社Greeeeed<br />
-                    コンサルティングチーム　Mike Davis様
-                  </figcaption>
-                </figure>
-                <p class="client-text">
-                  以前他のツールを使っていた時は、自分たちの使
-                  いやすい形にデータを整形するなど、結局手作業
-                  が発生してしまうケースが多かったのですが、 Data
-                  Maniaは日々レポートのテンプレートが追
-                  加されているので、「こういう形でデータがみた
-                  い」というニーズに必ずマッチします。
-                  もうこれなしの頃には戻れません。
-                </p>
-              </li>
-              <li class="client-item">
-                <figure class="client-image">
-                  <img src="asetts/images/photo-mr_nakajima@2x.jpg" alt="" />
-                  <figcaption>株式会社山月堂　中島様</figcaption>
-                </figure>
-                <p class="client-text">
-                  安い！速い！すごい！見事に私の求める要素三拍
-                  子が揃ったツールです。<br />
-                  Data Maniaを使い始めてからは毎日定時で上が
-                  れるようになりました！
+              <li class="works-item">
+                <div class="works-image">
+                  <img src="asetts/img/card-img03@2x.jpg" alt="" />
+                </div>
+                <p class="works-text">
+                  新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
                 </p>
               </li>
             </ul>
+            <p class="primary-btn">
+              <a href="#" class="fontsize-M">View more</a>
+            </p>
+            <div class="section-bottom">Our Works</div>
           </div>
-        </div>
-      </section>
-      <!-- /お客様の声 -->
+        </section>
+      </div>
+      <!-- //works -->
 
-      <!-- お問い合わせ -->
-      <section class="section">
-        <div class="common-inner">
-          <h2 class="section-title">
-            <span>お問い合わせ</span>
-          </h2>
-          <form action="" method="POST" class="contact-form">
-            <div class="contact-box">
-              <label class="form-parts">
-                <span class="parts-label">お名前</span>
-                <input type="text" name="your-name" />
-              </label>
-              <label class="form-parts">
-                <span class="parts-label">メールアドレス</span>
-                <input type="email" name="your-email" />
-              </label>
-              <label class="form-parts">
-                <span class="parts-label">お問い合わせ種別</span>
-                <select name="select" id="">
-                  <option value="選択肢1">選択肢1</option>
-                  <option value="選択肢2">選択肢2</option>
-                  <option value="選択肢3">選択肢3</option>
-                  <option value="選択肢4">選択肢4</option>
-                  <option value="選択肢5">選択肢5</option>
-                </select>
-              </label>
-              <label class="form-parts">
-                <span class="parts-label">お問い合わせ内容</span>
-                <textarea name="content"></textarea>
-              </label>
-            </div>
-            <button class="common-btn btn-black" value="送信">送信</button>
-          </form>
-        </div>
+      <!-- service -->
+      <section class="section" id="service">
+        <h2 class="section-title section-title-black fontsize-XL">Service</h2>
+        <ul class="service-list">
+          <li class="service-item service-item1">
+            <a href="#" class="fontsize-L">Hearing</a>
+          </li>
+          <li class="service-item service-item2">
+            <a href="#" class="fontsize-L">Planning</a>
+          </li>
+          <li class="service-item service-item3">
+            <a href="#" class="fontsize-L">Direction</a>
+          </li>
+        </ul>
+        <div class="section-bottom bottom-black">Our Service</div>
       </section>
-      <!-- /お問い合わせ -->
+      <!-- //service -->
+
+      <!-- contact -->
+      <div class="contact-bg">
+        <section class="section" id="contact">
+          <div class="common-inner">
+            <h2 class="section-title section-title-R fontsize-XL">Contact</h2>
+            <p class="contact-text fontsize-L2">お気軽にご相談ください。　</p>
+            <p class="primary-btn">
+              <a href="contact/index.html" class="fontsize-M">Contact</a>
+            </p>
+            <div class="section-bottom">Contact us</div>
+          </div>
+        </section>
+      </div>
+      <!-- //contact -->
     </main>
     <!-- /main -->
-    <!-- footer -->
+    <!-- フッター -->
     <footer class="footer">
-      <div class="footer-inner footer-box">
-        <div class="footer-nav">
-          <ul class="fv-list">
-            <li class="fv-item">
-              <h4 class="fv-contents">企業情報</h4>
-              <ul class="fv-contents-list">
-                <li class="fv-contents-item">
-                  <a href="">会社概要</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">ミッション</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">メッセージ</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">アクセス</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">採用情報</a>
-                </li>
-              </ul>
-            </li>
-            <li class="fv-item">
-              <h4 class="fv-contents">製品について</h4>
-              <ul class="fv-contents-list">
-                <li class="fv-contents-item">
-                  <a href="">Data Mania v3</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">Artemis Score</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">Aegis Engine</a>
-                </li>
-              </ul>
-            </li>
-            <li class="fv-item">
-              <h4 class="fv-contents">メディア情報</h4>
-              <ul class="fv-contents-list">
-                <li class="fv-contents-item">
-                  <a href="">掲載情報</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">取材のお申込み</a>
-                </li>
-              </ul>
-            </li>
-            <li class="fv-item">
-              <h4 class="fv-contents">サポート</h4>
-              <ul class="fv-contents-list">
-                <li class="fv-contents-item">
-                  <a href="">よくあるご質問</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">サービス稼働状況</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">お問い合わせ</a>
-                </li>
-              </ul>
-            </li>
-            <li class="fv-item">
-              <h4 class="fv-contents">サイトについて</h4>
-              <ul class="fv-contents-list">
-                <li class="fv-contents-item">
-                  <a href="">利用規約</a>
-                </li>
-                <li class="fv-contents-item">
-                  <a href="">プライバシーポリシー</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <p class="copy-right fontsize-S">
+        <small>&copy;crest.design all rights reserved</small>
+      </p>
     </footer>
-    <!-- /footer -->
+    <!-- //フッター -->
   </body>
 </html>
