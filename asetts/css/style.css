@@ -62,7 +62,7 @@
 
 /* メインボタン */
 .primary-btn {
-  margin: 30px 0 40px;
+  margin: 30px auto 40px;
   text-align: center;
 }
 
@@ -74,11 +74,8 @@
 }
 
 .primary-btn a,
-.send-btn a {
+.send-btn {
   display: inline-block;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   padding: 0 20px;
   min-width: 235px;
   height: 60px;
@@ -272,11 +269,17 @@
 /* ====================
     Service
   ===================== */
+#service {
+  overflow: hidden;
+}
+
 .service-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
 }
 
 .service-item {
